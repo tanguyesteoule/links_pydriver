@@ -1,10 +1,8 @@
 from pymongo import MongoClient
 
-PORT = 27017
-DB_NAME = 'links'
 
-def connect():
-    client = MongoClient('mongodb://localhost:{0}'.format(PORT))
-    db = client[DB_NAME]
+def connect(url='localhost', db_name='links', port=27017):
+    client = MongoClient('mongodb://{0}:{1}'.format(url, port))
+    db = client[db_name]
 
     return db

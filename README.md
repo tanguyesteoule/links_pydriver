@@ -37,6 +37,6 @@ s2 = Snapshot(1, [e1, e2], [r1], {'Encontred exception': 'Unhandle NCS !'})
 exp = Experiment('exp_example', {'Description': 'Example links data structure'}, [s1, s2])
 
 # Filling the database
-db = db_utils.connect()
+db = db_utils.connect(url='localhost', db_name='links', port=27017)
 marshalling(db, exp)
 ```
