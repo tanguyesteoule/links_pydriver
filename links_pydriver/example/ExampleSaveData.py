@@ -38,7 +38,7 @@ def create_relations():
 
 
 if __name__ == '__main__':
-    db = db_utils.connect()
+    db = db_utils.connect(db_name='links_test')
     exp = create_experience()
     list_entities = create_entities()
     list_relations = create_relations()

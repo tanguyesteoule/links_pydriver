@@ -1,17 +1,17 @@
 class Snapshot:
-    def __init__(self, snapshot_number, entities, relations, attribute_map):
-        self.__snapshot_number = snapshot_number
+    def __init__(self, snapshotNumber, entities, relations, attributeMap):
+        self.__snapshotNumber = snapshotNumber
         self.__entities = entities
         self.__relations = relations
-        self.__attribute_map = attribute_map
+        self.__attributeMap = attributeMap
 
     @property
-    def snapshot_number(self):
-        return self.__snapshot_number
+    def snapshotNumber(self):
+        return self.__snapshotNumber
 
-    @snapshot_number.setter
-    def snapshot_number(self, snapshot_number):
-        self.__snapshot_number = snapshot_number
+    @snapshotNumber.setter
+    def snapshotNumber(self, snapshotNumber):
+        self.__snapshotNumber = snapshotNumber
 
     @property
     def entities(self):
@@ -30,9 +30,9 @@ class Snapshot:
         self.__relations = relations
 
     @property
-    def attribute_map(self):
-        return self.__attribute_map
+    def attributeMap(self):
+        return self.__attributeMap
 
-    @attribute_map.setter
-    def attribute_map(self, attribute_map):
-        self.__attribute_map = attribute_map
+    @attributeMap.setter
+    def attributeMap(self, attributeMap):
+        self.__attributeMap = attributeMap

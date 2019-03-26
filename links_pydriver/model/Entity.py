@@ -1,8 +1,8 @@
 class Entity():
-    def __init__(self, entityID, type, attribute_map):
+    def __init__(self, entityID, type, attributeMap):
         self.__entityID = entityID
         self.__type = type
-        self.__attribute_map = attribute_map
+        self.__attributeMap = attributeMap
 
     @property
     def entityID(self):
@@ -21,10 +21,9 @@ class Entity():
         self.__type = type
 
     @property
-    def attribute_map(self):
-        return self.__attribute_map
+    def attributeMap(self):
+        return self.__attributeMap
 
-    @attribute_map.setter
-    def attribute_map(self, attribute_map):
-        self.__attribute_map = attribute_map
-
+    @attributeMap.setter
+    def attributeMap(self, attributeMap):
+        self.__attributeMap = attributeMap

@@ -1,4 +1,3 @@
-
 def __get_dict_version(object, fields=None):
     var_dict = vars(object)
     prefix = '_{0}__'.format(object.__class__.__name__)
@@ -13,12 +12,10 @@ def __get_dict_version(object, fields=None):
     return new_dict
 
 
-def marshalling(db, experience):
+def marshalling(db, experiment):
+    collection = db[experiment.experimentName]
 
-    collection = db[experience.name]
+    collection.insert_one(__get_dict_version(experiment, ['experimentName', 'attributeMap']))
 
-    collection.insert_one(__get_dict_version(experience, ['name', 'attribute_map']))
-
-    for s in experience.snapshots:
+    for s in experiment.snapshots:
         collection.insert_one(__get_dict_version(s))
-

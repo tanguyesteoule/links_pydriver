@@ -1,24 +1,24 @@
 class Experiment:
-    def __init__(self, name, attribute_map, snapshots):
-        self.__name = name
-        self.__attribute_map = attribute_map
+    def __init__(self, experimentName, attributeMap, snapshots):
+        self.__experimentName = experimentName
+        self.__attributeMap = attributeMap
         self.__snapshots = snapshots
 
     @property
-    def name(self):
-        return self.__name
+    def experimentName(self):
+        return self.__experimentName
 
-    @name.setter
-    def name(self, name):
-        self.__name = name
+    @experimentName.setter
+    def experimentName(self, experimentName):
+        self.__experimentName = experimentName
 
     @property
-    def attribute_map(self):
-        return self.__attribute_map
+    def attributeMap(self):
+        return self.__attributeMap
 
-    @attribute_map.setter
-    def attribute_map(self, attribute_map):
-        self.__attribute_map = attribute_map
+    @attributeMap.setter
+    def attributeMap(self, attributeMap):
+        self.__attributeMap = attributeMap
 
     @property
     def snapshots(self):

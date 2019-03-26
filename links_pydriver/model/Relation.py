@@ -1,9 +1,9 @@
 class Relation:
-    def __init__(self, relationID, nodeAid, nodeBid, is_oriented, type):
+    def __init__(self, relationID, nodeAid, nodeBid, isOriented, type):
         self.__relationID = relationID
         self.__nodeAid = nodeAid
         self.__nodeBid = nodeBid
-        self.__is_oriented = is_oriented
+        self.__isOriented = isOriented
         self.__type = type
 
     @property
@@ -31,12 +31,12 @@ class Relation:
         self.__nodeBid = nodeBid
 
     @property
-    def is_oriented(self):
-        return self.__is_oriented
+    def isOriented(self):
+        return self.__isOriented
 
-    @is_oriented.setter
-    def is_oriented(self, is_oriented):
-        self.__is_oriented = is_oriented
+    @isOriented.setter
+    def isOriented(self, isOriented):
+        self.__isOriented = isOriented
 
     @property
     def type(self):
