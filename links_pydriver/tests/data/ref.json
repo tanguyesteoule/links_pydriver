@@ -1,0 +1,87 @@
+[{
+  "_id": {
+    "$oid": "5c9b380769258d2914748558"
+  },
+  "experimentName": "exp_ref",
+  "attributeMap": {
+    "Description": "Example links data structure"
+  }
+},
+{
+  "_id": {
+    "$oid": "5c9b380769258d2914748559"
+  },
+  "snapshotNumber": {
+    "$numberInt": "0"
+  },
+  "attributeMap": {
+    "Encountered exception": "Unhandled NCS !"
+  },
+  "entities": [
+    {
+      "type": "Type A",
+      "entityID": "Agent 1",
+      "attributeMap": {
+        "name": "A"
+      }
+    }
+  ],
+  "relations": []
+},
+{
+  "_id": {
+    "$oid": "5c9b380769258d291474855a"
+  },
+  "snapshotNumber": {
+    "$numberInt": "1"
+  },
+  "attributeMap": {},
+  "entities": [
+    {
+      "type": "Type A",
+      "entityID": "Agent 1",
+      "attributeMap": {
+        "name": "A"
+      }
+    },
+    {
+      "type": "Type B",
+      "entityID": "Agent 2",
+      "attributeMap": {
+        "name": "B"
+      }
+    },
+    {
+      "type": "Type C",
+      "entityID": "Agent 3",
+      "attributeMap": {}
+    }
+  ],
+  "relations": [
+    {
+      "nodeBid": "Agent 2",
+      "relationID": "relation1",
+      "isOriented": true,
+      "type": "Relation1",
+      "nodeAid": "Agent 1"
+    },
+    {
+      "nodeBid": "Agent 1",
+      "relationID": "relation2",
+      "isOriented": false,
+      "type": "Relation2",
+      "nodeAid": "Agent 3"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "5c9b380769258d291474855b"
+  },
+  "snapshotNumber": {
+    "$numberInt": "2"
+  },
+  "attributeMap": {},
+  "entities": [],
+  "relations": []
+}]
