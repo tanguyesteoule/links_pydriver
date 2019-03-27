@@ -33,7 +33,7 @@ r1 = Relation('helping1', 'Agent 2', 'Agent 1', True, 'Help')
 s1 = Snapshot(0, [e1], [], {'Encontred exception': 'Unhandle NCS !'})
 s2 = Snapshot(1, [e1, e2], [r1], {'Encontred exception': 'Unhandle NCS !'})
 
-# Creating experience
+# Creating experiment
 exp = Experiment('exp_example', {'Description': 'Example links data structure'}, [s1, s2])
 
 # Filling the database

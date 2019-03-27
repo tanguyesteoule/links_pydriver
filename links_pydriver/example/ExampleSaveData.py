@@ -43,8 +43,8 @@ if __name__ == '__main__':
     list_entities = create_entities()
     list_relations = create_relations()
 
-    s1 = Snapshot(0, list_entities[:4], list_relations[:2], {'Encontred exception': 'Unhandle NCS !'})
-    s2 = Snapshot(1, list_entities, list_relations, {'Encontred exception': 'Unhandle NCS !'})
+    s1 = Snapshot(0, list_entities[:4], list_relations[:2], {'Encountered exception': 'Unhandled NCS !'})
+    s2 = Snapshot(1, list_entities, list_relations, {'Encountered exception': 'Unhandled NCS !'})
 
     list_snapshots = [s1, s2]
 
