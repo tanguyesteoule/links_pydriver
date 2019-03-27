@@ -30,8 +30,8 @@ e2 = Entity("Agent 2", "Ant", {'name': 'Tuoi'})
 r1 = Relation('helping1', 'Agent 2', 'Agent 1', True, 'Help')
 
 # Creating snapshot
-s1 = Snapshot(0, [e1], [], {'Encontred exception': 'Unhandle NCS !'})
-s2 = Snapshot(1, [e1, e2], [r1], {'Encontred exception': 'Unhandle NCS !'})
+s1 = Snapshot(0, [e1], [], {'Encountered exception': 'Unhandled NCS !'})
+s2 = Snapshot(1, [e1, e2], [r1], {'Encountered exception': 'Unhandled NCS !'})
 
 # Creating experiment
 exp = Experiment('exp_example', {'Description': 'Example links data structure'}, [s1, s2])
