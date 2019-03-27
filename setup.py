@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='links_pydriver',
-      version='0.3',
+      version='0.4',
       description='A python driver for Links',
       url='https://github.com/tanguyesteoule/links_pydriver',
       author='Tanguy Esteoule',
