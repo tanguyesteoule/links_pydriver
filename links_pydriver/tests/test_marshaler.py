@@ -64,7 +64,7 @@ def test_marshaler():
     # Get reference data
     filename = "data/ref.json"
     with open(os.path.join(TEST_FOLDER, filename), 'r') as f:
-        data_ref = json.load(f)
+        data_ref = json.load(f)['links_docs']
 
     # Comparison
     assert __process(data_test) == __process(data_ref)
