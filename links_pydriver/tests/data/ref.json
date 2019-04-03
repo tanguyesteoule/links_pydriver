@@ -1,6 +1,7 @@
-[
-  {
-    "_id": {
+{
+  "links_docs" : [
+    {
+      "_id": {
       "$oid": "5c9b520369258d3ff4aa30d9"
     },
     "experimentName": "exp_ref",
@@ -87,3 +88,4 @@
     "attributeMap": {}
   }
 ]
+}
