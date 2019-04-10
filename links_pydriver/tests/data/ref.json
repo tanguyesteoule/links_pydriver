@@ -64,14 +64,20 @@
         "nodeAid": "Agent 1",
         "nodeBid": "Agent 2",
         "isOriented": true,
-        "type": "Relation1"
+        "type": "Relation1",
+        "attributeMap": {
+          "name": "Relation 1"
+        }
       },
       {
         "relationID": "relation2",
         "nodeAid": "Agent 3",
         "nodeBid": "Agent 1",
         "isOriented": false,
-        "type": "Relation2"
+        "type": "Relation2",
+        "attributeMap": {
+          "name": "Relation 2"
+        }
       }
     ],
     "attributeMap": {}

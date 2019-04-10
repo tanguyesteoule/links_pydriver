@@ -1,10 +1,11 @@
 class Relation:
-    def __init__(self, relationID, nodeAid, nodeBid, isOriented, type):
+    def __init__(self, relationID, nodeAid, nodeBid, isOriented, type, attributeMap):
         self.__relationID = relationID
         self.__nodeAid = nodeAid
         self.__nodeBid = nodeBid
         self.__isOriented = isOriented
         self.__type = type
+        self.__attributeMap = attributeMap
 
     @property
     def relationID(self):
@@ -45,3 +46,12 @@ class Relation:
     @type.setter
     def type(self, type):
         self.__type = type
+
+    @property
+    def attributeMap(self):
+        return self.__attributeMap
+
+    @attributeMap.setter
+    def attributeMap(self, attributeMap):
+        self.__attributeMap = attributeMap
+

@@ -38,8 +38,8 @@ def __create_experiment():
     e3 = Entity("Agent 3", "Type C", {})
 
     # Creating relations
-    r1 = Relation('relation1', 'Agent 1', 'Agent 2', True, 'Relation1')
-    r2 = Relation('relation2', 'Agent 3', 'Agent 1', False, 'Relation2')
+    r1 = Relation('relation1', 'Agent 1', 'Agent 2', True, 'Relation1', {'name': 'Relation 1'})
+    r2 = Relation('relation2', 'Agent 3', 'Agent 1', False, 'Relation2', {'name': 'Relation 2'})
 
     # Creating snapshot
     s1 = Snapshot(0, [e1], [], {'Encountered exception': 'Unhandled NCS !'})

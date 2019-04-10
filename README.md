@@ -27,7 +27,7 @@ e1 = Entity("Agent 1", "Ant", {'name': 'Maholise'})
 e2 = Entity("Agent 2", "Ant", {'name': 'Tuoi'})
 
 # Creating relations
-r1 = Relation('helping1', 'Agent 2', 'Agent 1', True, 'Help')
+r1 = Relation('helping1', 'Agent 2', 'Agent 1', True, 'Help', {'name': 'Helping 1')
 
 # Creating snapshot
 s1 = Snapshot(0, [e1], [], {'Encountered exception': 'Unhandled NCS !'})

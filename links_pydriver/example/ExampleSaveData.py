@@ -29,9 +29,9 @@ def create_entities():
 
 
 def create_relations():
-    r1 = Relation('helping1', 'Agent 2', 'Agent 1', True, 'Help')
-    r2 = Relation('helping1', 'Agent 3', 'Agent 1', True, 'Help')
-    r3 = Relation('fight1', 'Agent 4', 'Agent 5', False, 'Fight')
+    r1 = Relation('helping1', 'Agent 2', 'Agent 1', True, 'Help', {'name': 'Helping 1'})
+    r2 = Relation('helping2', 'Agent 3', 'Agent 1', True, 'Help', {'name': 'Helping 2'})
+    r3 = Relation('fight1', 'Agent 4', 'Agent 5', False, 'Fight', {'name': 'Helping 3'})
     l_relations = [r1, r2, r3]
 
     return l_relations
